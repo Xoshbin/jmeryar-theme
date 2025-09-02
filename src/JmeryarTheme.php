@@ -4,9 +4,7 @@ namespace Xoshbin\JmeryarTheme;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
-use Filament\Support\Assets\Theme;
 use Filament\Support\Colors\Color;
-use Filament\Support\Facades\FilamentAsset;
 
 class JmeryarTheme implements Plugin
 {
