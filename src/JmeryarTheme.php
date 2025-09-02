@@ -5,7 +5,7 @@ namespace Xoshbin\JmeryarTheme;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 use Filament\Support\Assets\Theme;
-use Filament\Support\Color;
+use Filament\Support\Colors\Color;
 use Filament\Support\Facades\FilamentAsset;
 
 class JmeryarTheme implements Plugin
@@ -15,21 +15,24 @@ class JmeryarTheme implements Plugin
         return 'jmeryar-theme';
     }
 
+    public static function make(): static
+    {
+        return new static;
+    }
+
     public function register(Panel $panel): void
     {
-        FilamentAsset::register([
-            Theme::make('jmeryar-theme', __DIR__ . '/../resources/dist/jmeryar-theme.css'),
-        ]);
-
         $panel
             ->font('DM Sans')
-            ->primaryColor(Color::Amber)
-            ->secondaryColor(Color::Gray)
-            ->warningColor(Color::Amber)
-            ->dangerColor(Color::Rose)
-            ->successColor(Color::Green)
-            ->grayColor(Color::Gray)
-            ->theme('jmeryar-theme');
+            ->colors([
+                'danger' => Color::Rose,
+                'gray' => Color::Gray,
+                'info' => Color::Blue,
+                'primary' => Color::Indigo,
+                'success' => Color::Emerald,
+                'warning' => Color::Orange,
+            ])
+            ->viteTheme('vendor/xoshbin/jmeryar-theme/resources/css/theme.css');
     }
 
     public function boot(Panel $panel): void
