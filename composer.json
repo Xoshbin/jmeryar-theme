@@ -1,15 +1,15 @@
 {
-    "name": "xoshbin/jmeryar-theme",
+    "name": "xoshbin/filament-jmeryar-theme",
     "description": "This is my package jmeryar-theme",
     "keywords": [
         "Xoshbin",
         "laravel",
         "jmeryar-theme"
     ],
-    "homepage": "https://github.com/xoshbin/jmeryar-theme",
+    "homepage": "https://github.com/xoshbin/filament-jmeryar-theme",
     "support": {
-        "issues": "https://github.com/xoshbin/jmeryar-theme/issues",
-        "source": "https://github.com/xoshbin/jmeryar-theme"
+        "issues": "https://github.com/xoshbin/filament-jmeryar-theme/issues",
+        "source": "https://github.com/xoshbin/filament-jmeryar-theme"
     },
     "license": "MIT",
     "authors": [
